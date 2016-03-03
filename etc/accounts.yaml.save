@@ -1,0 +1,11 @@
+# The number of accounts required can be estimated as CONCURRENCY x 2
+# It is expected that each user provided here will be in a different tenant.
+# This is required to provide isolation between test for running in parallel
+#
+# Valid fields for credentials are defined in the descendants of
+# auth.Credentials - see KeystoneV[2|3]Credentials.CONF_ATTRIBUTES
+
+- username: 'user_1'
+  tenant_name: 'test_tenant_1'
+  password: 'test_password'
+
