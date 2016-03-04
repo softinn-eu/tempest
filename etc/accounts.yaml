@@ -6,5 +6,5 @@
 # auth.Credentials - see KeystoneV[2|3]Credentials.CONF_ATTRIBUTES
 
 - username: 'pandrzejewski'
-  tenant_name: 'softinn'
+  tenant_name: 'admin'
   password: 'CwQ7k6pyNtNg'
