@@ -12,7 +12,7 @@ debug = false
 # the default INFO level. (boolean value)
 # This option is deprecated for removal.
 # Its value may be silently ignored in the future.
-verbose = false
+#verbose = false
 
 # The name of a logging configuration file. This file is appended to
 # any existing logging configuration files. For details about logging
@@ -209,7 +209,7 @@ admin_password = CwQ7k6pyNtNg
 #endpoint_type = publicURL
 
 # Timeout for Ironic node to completely provision (integer value)
-#active_timeout = 300
+active_timeout = 1200
 
 # Timeout for association of Nova instance and Ironic node (integer
 # value)
@@ -239,10 +239,10 @@ image_ref =
 image_ref_alt = 
 
 # Valid primary flavor to use in tests. (string value)
-flavor_ref = 2
+flavor_ref = 3
 
 # Valid secondary flavor to be used in tests. (string value)
-flavor_ref_alt = 3
+flavor_ref_alt = 4
 
 # Time in seconds between build status checks. (integer value)
 #build_interval = 1
@@ -250,7 +250,7 @@ flavor_ref_alt = 3
 # Timeout in seconds to wait for an instance to build. Other services
 # that do not define build_timeout will inherit this value. (integer
 # value)
-#build_timeout = 300
+build_timeout = 1200
 
 # Additional wait time for clean state, when there is no OS-EXT-STS
 # extension available (integer value)
@@ -553,12 +553,12 @@ region = RegionOne
 # Username to use for Nova API requests. (string value)
 # This option is deprecated for removal.
 # Its value may be silently ignored in the future.
-username = pandrzejewski
+#username = pandrzejewski
 
 # Tenant name to use for Nova API requests. (string value)
 # This option is deprecated for removal.
 # Its value may be silently ignored in the future.
-tenant_name = admin
+#tenant_name = admin
 
 # Role required to administrate keystone. (string value)
 admin_role = admin
@@ -566,7 +566,7 @@ admin_role = admin
 # API key to use when authenticating. (string value)
 # This option is deprecated for removal.
 # Its value may be silently ignored in the future.
-password = CwQ7k6pyNtNg
+#password = CwQ7k6pyNtNg
 
 # Domain name for authentication (Keystone V3).The same domain applies
 # to user and project (string value)
