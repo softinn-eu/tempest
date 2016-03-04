@@ -122,16 +122,20 @@ from tempest.services.identity.v3.json.endpoints_client import \
     EndPointClient as EndPointV3Client
 from tempest.services.identity.v3.json.groups_client import \
     GroupsClient as GroupsV3Client
-from tempest.services.identity.v3.json.identity_client import IdentityV3Client
+from tempest.services.identity.v3.json.identity_client import \
+    IdentityClient as IdentityV3Client
 from tempest.services.identity.v3.json.policies_client import \
     PoliciesClient as PoliciesV3Client
 from tempest.services.identity.v3.json.projects_client import ProjectsClient
 from tempest.services.identity.v3.json.regions_client import \
     RegionsClient as RegionsV3Client
+from tempest.services.identity.v3.json.roles_client import \
+    RolesClient as RolesV3Client
 from tempest.services.identity.v3.json.services_client import \
     ServicesClient as IdentityServicesV3Client
 from tempest.services.identity.v3.json.trusts_client import TrustsClient
-from tempest.services.identity.v3.json.users_clients import UsersV3Client
+from tempest.services.identity.v3.json.users_clients import \
+    UsersClient as UsersV3Client
 from tempest.services.image.v1.json.images_client import ImagesClient
 from tempest.services.image.v2.json.images_client import ImagesClientV2
 from tempest.services.network.json.network_client import NetworkClient
@@ -519,6 +523,7 @@ class Manager(manager.Manager):
         self.users_v3_client = UsersV3Client(self.auth_provider, **params_v3)
         self.endpoints_client = EndPointV3Client(self.auth_provider,
                                                  **params_v3)
+        self.roles_v3_client = RolesV3Client(self.auth_provider, **params_v3)
         self.identity_services_client = IdentityServicesV3Client(
             self.auth_provider, **params_v3)
         self.policies_client = PoliciesV3Client(self.auth_provider,
