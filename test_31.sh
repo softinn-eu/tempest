@@ -1,11 +1,6 @@
 #!/bin/bash
 #setup
-export OS_USERNAME="pandrzejewski"
-export OS_PASSWORD=CwQ7k6pyNtNg
-export OS_PROJECT_NAME='admin'
-export OS_REGION_NAME="RegionOne"
-export OS_AUTH_URL=https://identity.mgmt.dev.spnt.pl:5000/v2.0
-export OS_CACERT=ca.pem
+. common_config.sh
 
 MYRA=($(nova server-group-create test-31-server-group affinity| awk '{print $2}'))
 GROUP_ID=${MYRA[1]}
