@@ -515,7 +515,7 @@ disable_ssl_certificate_validation = true
 
 # Specify a CA bundle file to use in verifying a TLS (https) server
 # certificate. (string value)
-#ca_certificates_file = <None>
+ca_certificates_file = ../ca.pem
 
 # Full URI of the OpenStack Identity API (Keystone), v2 (string value)
 uri = https://identity.mgmt.dev.spnt.pl:5000/v2.0
